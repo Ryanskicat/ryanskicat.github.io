@@ -1,0 +1,88 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  color: #3c3c3c;
+  font-family: "avenir next", avenir, sans-serif;
+  min-height: 100vh;
+}
+
+body.loading {
+  background-image: none;
+  background-color: #282624;
+}
+
+body.loading > main {
+  display: none;
+}
+
+body.loading > bouncing-loader {
+  display: flex;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #bf4e52;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+img {
+  width: 500px;
+}
+
+.einstein {
+  color: #bf4e52
+}
+
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
+}
+
+.bouncing-loader {
+  align-items: center;
+  justify-content: center;
+  min-height: inherit;
+  display: none;
+}
+
+body.loading > .bouncing-loader {
+  display: flex !important;
+}
+.bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
