@@ -15,4 +15,4 @@ setTimeout(
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var day = days[ new Date().getDay() ];
-document.getElementById('time').innerHTML = 'It\'s ' + day + '.';
+document.getElementById('time').innerHTML = 'It\'s ' + day + '. ';
