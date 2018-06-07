@@ -6,6 +6,10 @@ body {
   min-height: 100vh;
 }
 
+body.no-bg {
+  background-image: none;
+}
+
 body.loading {
   background-image: none;
   background-color: #282624;
@@ -85,4 +89,44 @@ body.loading > .bouncing-loader {
 }
 .bouncing-loader > div:nth-child(3) {
   animation-delay: 0.4s;
+}
+
+.origami-grid {
+  display: grid;
+  grid-gap: 1rem;
+  align-content: space-between;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+    .origami-grid {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.origami-grid > img {
+  max-width: 36rem;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 48em) {
+  .origami-grid > img:nth-child(1) {
+    grid-column: span 3;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .origami-grid > img:nth-child(2) {
+    grid-column: span 3;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .origami-grid > img:nth-child(n + 3) {
+    grid-column: span 2;
+  }
 }
