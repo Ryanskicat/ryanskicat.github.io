@@ -5,7 +5,8 @@
   "repository": "https://github.com/Ryanskicat/ryanskicat.github.io",
   "license": "MIT",
   "scripts": {
-    "start": "yarn serve"
+    "start": "yarn serve",
+    "fmt": "prettier \"{css/**,}/*.css\" --single-quote --no-semi --write"
   },
   "devDependencies": {
     "prettier": "^1.13.4",

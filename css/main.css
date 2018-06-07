@@ -1,8 +1,8 @@
 body {
-  background-image: url("/img/bg.jpg");
+  background-image: url('/img/bg.jpg');
   background-size: cover;
   color: #3c3c3c;
-  font-family: "avenir next", avenir, sans-serif;
+  font-family: 'avenir next', avenir, sans-serif;
   min-height: 100vh;
 }
 
@@ -46,13 +46,12 @@ h1:hover::after {
   transform-origin: bottom left;
 }
 
-
 img {
   width: 500px;
 }
 
 .einstein {
-  color: #bf4e52
+  color: #bf4e52;
 }
 
 @keyframes bouncing-loader {
@@ -102,10 +101,10 @@ body.loading > .bouncing-loader {
 }
 
 @media screen and (min-width: 48em) {
-    .origami-grid {
-      grid-gap: 2rem;
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .origami-grid {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .origami-grid > img {
