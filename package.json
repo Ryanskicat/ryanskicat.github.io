@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn serve",
-    "fmt": "prettier \"{css/**,}/*.css\" --single-quote --no-semi --write"
+    "fmt": "prettier {css,js}/**/*.{css,js} --single-quote --no-semi --write"
   },
   "devDependencies": {
     "prettier": "^1.13.4",
