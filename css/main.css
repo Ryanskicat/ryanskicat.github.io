@@ -96,8 +96,8 @@ body.loading > .bouncing-loader {
   align-content: space-between;
   justify-content: space-around;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 48em) {
