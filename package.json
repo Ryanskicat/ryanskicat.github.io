@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "prettier": "^1.13.4",
-    "serve": "^8.1.1"
+    "serve": "^10.1.2"
   }
 }
